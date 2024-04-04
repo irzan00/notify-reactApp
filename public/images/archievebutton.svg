@@ -1,0 +1,19 @@
+<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bullet / checkbox - completed">
+<g id="Rectangle" filter="url(#filter0_d_224_1140)">
+<rect x="0.5" y="0.069519" width="24" height="24" rx="6" fill="#8CD4CB"/>
+<rect x="2" y="1.56952" width="21" height="21" rx="4.5" stroke="#33322E" stroke-width="3"/>
+</g>
+<path id="Vector" d="M5.64288 12.1813C6.70713 12.4469 9.96397 14.1244 10.9218 16.3552C11.9377 12.77 15.9286 5.88227 22.7857 4.35522" stroke="#F9F3E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_224_1140" x="0.5" y="0.069519" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2" dy="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.196078 0 0 0 0 0.180392 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_224_1140"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_224_1140" result="shape"/>
+</filter>
+</defs>
+</svg>
