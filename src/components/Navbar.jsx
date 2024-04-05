@@ -1,18 +1,16 @@
-import React from 'react';
-import SearchBar from './SearchBar';
+import React from "react";
+import SearchBar from "./SearchBar";
 
-class Navbar extends React.Component {
-    render() {
-        return (
-            <div className='navbar'>
-                <div className='logo'>
-                    <img src="../public/images/logo.svg" alt="" />
-                    <p>Notify</p>
-                </div>
-                <SearchBar />
-            </div>
-        )
-    }
+function Navbar({ titleSearch, onSearch }) {
+  return (
+    <div className="navbar">
+      <div className="logo">
+        <img src="../public/images/logo.svg" alt="" />
+        <p>Notify</p>
+      </div>
+      <SearchBar titleSearch={titleSearch} onSearch={onSearch} />
+    </div>
+  );
 }
 
 export default Navbar;

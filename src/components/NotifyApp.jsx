@@ -3,16 +3,19 @@ import Navbar from "./Navbar";
 import NoteInput from "./NoteInput";
 import NoteList from "./NoteList";
 import { getInitialData } from "../utils/data";
+import SearchBar from "./SearchBar";
 
 class NotifyApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       notes: getInitialData(),
+      search: "",
     };
     this.onDeleteNoteHandler = this.onDeleteNoteHandler.bind(this);
     this.onAddNoteHandler = this.onAddNoteHandler.bind(this);
     this.onArchiveHandler = this.onArchiveHandler.bind(this);
+    this.onSearchTitleHandler = this.onSearchTitleHandler.bind(this);
   }
 
   onDeleteNoteHandler(id) {
@@ -44,18 +47,31 @@ class NotifyApp extends React.Component {
     this.setState({ notes });
   }
 
+  onSearchTitleHandler(title) {
+    this.setState(() => {
+      return {
+        search: title,
+      };
+    });
+  }
+
   render() {
-    const activeNotes = this.state.notes.filter((note) => {
+
+    const notes = this.state.notes.filter((note) =>
+      note.title.toLowerCase().includes(this.state.search.toLocaleLowerCase())
+    );
+
+    const activeNotes = notes.filter((note) => {
       return note.archived === false;
     });
 
-    const archivedNotes = this.state.notes.filter((note) => {
+    const archivedNotes = notes.filter((note) => {
       return note.archived === true;
     });
 
     return (
       <div className="notify-app">
-        <Navbar />
+        <Navbar onSearch={this.onSearchTitleHandler}/>
         <NoteInput addNote={this.onAddNoteHandler} />
         <div className="notify-app__note-list">
           <h5>Catatan Aktif</h5>

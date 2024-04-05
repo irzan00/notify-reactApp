@@ -1,9 +1,15 @@
 import React from "react";
 
-class SearchBar extends React.Component {
-  render() {
-    return <input type="text" placeholder="Cari Catatan" className="search-bar"/>;
-  }
+function SearchBar({ titleSearch, onSearch }) {
+  return (
+    <input
+      type="text"
+      placeholder="Cari Catatan"
+      className="search-bar"
+      value={titleSearch}
+      onChange={(event) => onSearch(event.target.value)}
+    />
+  );
 }
 
 export default SearchBar;
