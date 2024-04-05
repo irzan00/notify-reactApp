@@ -4,7 +4,10 @@ function ArchieveButton({id, isArchive, onArchive}) {
     return (
         <button className='note-item__archieve' onClick={() => onArchive(id)}>
             <img src="../public/images/archievebutton.svg" alt="" />
-            {isArchive ? 'Pindahkan' : 'Arsipkan' }
+            {isArchive ? 
+            <p>Pindahkan</p>
+            : 
+            <p>Arsipkan</p> }
         </button>
     )
 }
