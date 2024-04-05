@@ -40,10 +40,10 @@ class NotifyApp extends React.Component {
   }
 
   onArchiveHandler(id) {
-    const notes = this.state.notes.map((note) => {
+    const updateNotes = this.state.notes.map((note) => {
       note.id === id ? { ...note, archived: !note.archived } : note;
     });
-    this.setState({ notes });
+    this.setState({ notes: updateNotes });
   }
 
   onSearchTitleHandler(title) {
