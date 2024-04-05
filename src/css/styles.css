@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: ;
+  display: flex;
+  padding: 2.5rem 5rem 3.24569rem 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.notify-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.notify-app__note-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.notify-app__note-list h5 {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  width: 80rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo p {
+  font-weight: 700;
+  color: #33322e;
+  font-size: 2.25rem;
+  line-height: normal;
+}
+
+.search-bar {
+  display: flex;
+  width: 21.25rem;
+  height: 3.125rem;
+  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+  align-items: center;
+  gap: 14.125rem;
+  flex-shrink: 0;
+  border: 1px solid var(--Black, #33322e);
+  border-radius: 1.5rem;
+}
+
+.note-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.note-input__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.note-input__header h5 {
+  font-size: 1.5rem;
+}
+
+.note-input__header p {
+  font-size: 1.125rem;
+}
+.note-input__judul {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 39.3125rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  border-radius: 1.5rem;
+  border: 1px solid var(--Black, #33322e);
+}
+
+.note-input__isi {
+  display: flex;
+  font-size: 1rem;
+  font-family: Roboto;
+  width: 39.3125rem;
+  height: 13.75rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  border-radius: 1.5rem;
+  border: 1px solid var(--Black, #33322e);
+}
+
+.note-input button {
+  display: flex;
+  width: 39.3125rem;
+  height: 3.4375rem;
+  padding: 1rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  background: var(--Peach---Dark, #f6a89e);
+  /* shadow / 12px */
+  box-shadow: 12px 12px 0px 0px #33322e;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.note-item {
+  display: flex;
+  min-height: 320px;
+  max-width: 293px;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  border-radius: 1.5rem;
+  border: 4px solid var(--Black, #33322e);
+  background: var(--Yellow---Light, #f9f3e5);
+  box-shadow: 12px 12px 0px 0px #33322e;
+}
+
+.note-item__action-button {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.note-item__archieve {
+  display: flex;
+  width: 8.125rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.note-item__delete {
+  display: flex;
+  width: 8.125rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.note-item-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.note-item-body h4 {
+  align-self: stretch;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.note-item-body .body-text {
+  flex: 1 0 0;
+  align-items: flex-start;
+  align-self: stretch;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.notify-app__note-list {
+  display: flex;
+  width: 79.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.note-list {
+  display: flex;
+  max-width: 1268px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
