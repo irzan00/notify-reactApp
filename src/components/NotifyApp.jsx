@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import NoteInput from "./NoteInput";
 import NoteList from "./NoteList";
 import { getInitialData } from "../utils/data";
-import SearchBar from "./SearchBar";
 
 class NotifyApp extends React.Component {
   constructor(props) {
@@ -32,7 +31,7 @@ class NotifyApp extends React.Component {
             id: +new Date(),
             title,
             body,
-            createdAt: new Date().toLocaleString(),
+            createdAt: new Date().toISOString(),
             archived: false,
           },
         ],
@@ -56,7 +55,6 @@ class NotifyApp extends React.Component {
   }
 
   render() {
-
     const notes = this.state.notes.filter((note) =>
       note.title.toLowerCase().includes(this.state.search.toLocaleLowerCase())
     );
@@ -71,7 +69,7 @@ class NotifyApp extends React.Component {
 
     return (
       <div className="notify-app">
-        <Navbar onSearch={this.onSearchTitleHandler}/>
+        <Navbar onSearch={this.onSearchTitleHandler} />
         <NoteInput addNote={this.onAddNoteHandler} />
         <div className="notify-app__note-list">
           <h5>Catatan Aktif</h5>
