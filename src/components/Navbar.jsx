@@ -3,13 +3,13 @@ import SearchBar from "./SearchBar";
 
 function Navbar({ titleSearch, onSearch }) {
   return (
-    <div className="navbar">
-      <div className="logo">
-        <img src="../public/images/logo.svg" alt="" />
-        <p>Notify</p>
-      </div>
-      <SearchBar titleSearch={titleSearch} onSearch={onSearch} />
-    </div>
+    <nav className="navbar bg-light sticky-top p-4">
+        <div className="logo">
+          <img src="../public/images/logo.svg" alt="" />
+          <p>Notify</p>
+        </div>
+        <SearchBar titleSearch={titleSearch} onSearch={onSearch} />
+    </nav>
   );
 }
 

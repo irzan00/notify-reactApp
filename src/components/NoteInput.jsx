@@ -50,7 +50,7 @@ class NoteInput extends React.Component {
 
   render() {
     return (
-      <form className="note-input" onSubmit={this.onSubmitEventHandler}>
+      <form className="note-input container-fluid" onSubmit={this.onSubmitEventHandler}>
         <div className="note-input__header">
           <h5>Buat Catatan</h5>
           <p>
@@ -73,9 +73,7 @@ class NoteInput extends React.Component {
           value={this.state.body}
           onChange={this.onBodyChangeHandler}
         />
-        <button type="submit">
-          <p>Buat Catatan</p>
-        </button>
+        <button type="button" class="btn">Buat Catatan</button>
       </form>
     );
   }
