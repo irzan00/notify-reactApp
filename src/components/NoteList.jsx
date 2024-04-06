@@ -3,7 +3,7 @@ import NoteItem from "./noteItem/NoteItem";
 
 function NoteList({ notes, onDelete, onArchive}) {
   return (
-    <div className="note-list">
+    <div className="note-list justify-content-center">
       {(notes.length) ? 
         (
           notes.map((note) => (
