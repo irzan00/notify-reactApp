@@ -114,7 +114,8 @@ body {
 }
 
 .note-input button:hover {
-  background: #AB6F67;
+  background: #E07163; 
+  color: white; 
 }
 
 .note-item {
